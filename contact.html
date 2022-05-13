@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7750b13892.js" crossorigin="anonymous"></script>
+    <title>Green Horizon</title>
+    <style>
+        .hero{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0), #b5f77eaf);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            width: 90%;
+            max-width: 600px;
+        }
+        .input-group{
+            margin-bottom: 30px;
+            position: relative;
+        }
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            outline: 0;
+            border: 1px solid rgb(9, 128, 9);
+            color: rgb(9, 128, 9);
+            background: transparent;
+            font-size: 15px;
+        }
+        label{
+            height: 100%;
+            position: absolute;
+            left: -8px;
+            top: -35px;
+            padding: 10px;
+            color: rgb(9, 128, 9);
+            cursor: text;
+            transition: 0.2s;
+        }
+        input:valid-label,
+        textarea:valid-label{
+            top: -35px;
+            font-size: 14px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .row input-group{
+            flex-basis: 48%;
+        }
+        .header{
+            width: 100%;
+            transform: translateY(100px);
+            text-align: center;
+            padding: 30px 0;
+            color: black;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="Herbs.png" class="logo"></a>
+            <div class="boxContainer">
+                <table class="elementContainer">
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Cari tanaman?" class="search">
+                        </td>
+                        <td>
+                            <a href=""><i class="material-icons"><img src="lup.png" width="35px" class="lup"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <strong><li><a href="product.html">Tanaman</a></li>
+                    <li><a href="contact.html">Hubungi Kami</a></li>
+                    <!--<li><a href="about.html">Tentang Kami</a></li></strong>-->
+                </ul>
+                
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div> 
+        <section class="header">
+            <h1>Hubungi Kami</h1>
+            <p>Melalui form di bawah ini!</p>
+        </section>
+        <div class="hero">
+
+            <form>
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="nama"> <i class="fas fa-user"></i> Masukkan Nama</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"> <i class="fas fa-phone-square-alt"></i> Masukkan Nomor Hp</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email"> <i class="fas fa-envelope"></i> Masukkan Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message"rows="8" required></textarea>
+                    <label for="message"> <i class="fas fa-comments"></i> Pesan</label>
+                </div>
+                <button type="submit">Submit<img src="Jelajahi.png" alt=""></button>
+            </form>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </div>
+        <script>
+
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+
+                if(menuList.style.maxHeight == "0px")
+            
+                    {
+                        menuList.style.maxHeight = "130px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+            }
+
+        </script>
+
+
+
+
+</body>
+<footer>
+    <section class="footer">
+        <h4>Tentang Kami</h4>
+        <p>Website ini berisi tentang ensiklopedi tanaman-tanaman obat beserta deskripsi nya. <br>
+            Untuk dijadikan referensi bagi peracik tanaman obat dan para peneliti tanaman obat. <br>
+            Selain itu juga digunakan untuk penambah wawasan bagi pelajar dan masyarakat secara umum.
+        </p>
+    </section>
+    <div class="social-links">
+        <img src="fb.png" alt="">
+        <img src="tw.png" alt="">
+        <a href="https://www.instagram.com/aether_sky41/?hl=id"><img src="ig.png" alt=""></a>
+    </div>
+</footer>
+</html>

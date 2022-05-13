@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Horizon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="Herbs.png" class="logo"></a>
+            <div class="boxContainer">
+                <table class="elementContainer">
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Cari tanaman?" class="search">
+                        </td>
+                        <td>
+                            <a href=""><i class="material-icons"><img src="lup.png" width="35px" class="lup"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <strong><li><a href="product.html">Tanaman</a></li>
+                    <li><a href="contact.html">Hubungi Kami</a></li>
+                    <!--<li><a href="about.html">Tentang Kami</a></li></strong>-->
+                </ul>
+                
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h5>Selamat Datang! di</h5>
+                <h2>Green Horizon</h2>
+                <p>Surga nya Tanaman Obat</p>
+                <button onclick="window.location.href ='product.html'">Mulai Jelajahi<img src="Jelajahi.png" alt=""></a></button>
+            </div>
+            <div class="col-2">
+                <img src="toga.png" class="toga">
+                <div class="color-box"></div>
+            </div>
+        </div>
+
+        
+    </div>
+
+        <script>
+
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+
+                if(menuList.style.maxHeight == "0px")
+            
+                    {
+                        menuList.style.maxHeight = "130px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+            }
+
+        </script>
+</body>
+<footer>
+    <section class="footer">
+        <h4>Tentang Kami</h4>
+        <p>Website ini berisi tentang ensiklopedi tanaman-tanaman obat beserta deskripsi nya. <br>
+            Untuk dijadikan referensi bagi peracik tanaman obat dan para peneliti tanaman obat. <br>
+            Selain itu juga digunakan untuk penambah wawasan bagi pelajar dan masyarakat secara umum.
+        </p>
+    </section>
+    <div class="social-links">
+        <img src="fb.png" alt="">
+        <img src="tw.png" alt="">
+        <a href="https://www.instagram.com/aether_sky41/?hl=id"><img src="ig.png" alt=""></a>
+    </div>
+</footer>
+</html>
